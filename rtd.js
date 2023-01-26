@@ -1,21 +1,26 @@
-//average rtd (advantage or disadvantage can be added in type parameter)
+const numberError = "First parameter must be a number equal to 200 or less than 200, as well as greater than 0.";
+const decimalError = "First parameter must be a whole number.";
+const notNumErr = "Parameters not recognized. The first paramter must be a number.";
+const stringErr = "Second parameter must be a string reading 'advantage' or 'disadvantage'.";
+
+//average rtd (advantage or disadvantage can be added in the "type" parameter)
 function rtd(num, abilityScore, type) {
     let typeIsUndefined = false;
-    if (type == undefined) {
+    if (type == "undefined") {
         typeIsUndefined = true;
     }
     if (typeof num != "number") {
-        throw "Parameters not recognized. The first paramter must be a number."
+        throw notNumErr
     }
     if ((num - Math.floor(num)) !== 0) { //if num has a decimal
-        throw "First parameter must be a whole number."
+        throw decimalError
     }
     if (num > 200 || num < 1) {
-        throw "First parameter must be a number equal to 200 or less than 200, as well as greater than 0."
+        throw numberError
     }
     if (typeIsUndefined == false) {
         if (typeof type != "string") {
-            throw "Second parameter must be a string reading 'advantage' or 'disadvantage'."
+            throw stringErr
         }
     }
 
@@ -46,21 +51,21 @@ function rtdProf(num, profLevel, abilityScore, type) {
     if(profLevel > 0) {
         proficiency = profLevel;
     }
-    if (type == undefined) {
+    if (type == "undefined") {
         typeIsUndefined = true;
     }
     if (typeof num != "number") {
-        throw "Parameters not recognized. The first paramter must be a number."
+        throw notNumErr
     }
     if ((num - Math.floor(num)) !== 0) { //if num has a decimal
-        throw "First parameter must be a whole number."
+        throw decimalError
     }
     if (num > 200 || num < 1) {
-        throw "First parameter must be a number equal to 200 or less than 200, as well as greater than 0."
+        throw numberError
     }
     if (typeIsUndefined == false) {
         if (typeof type != "string") {
-            throw "Second parameter must be a string reading 'advantage' or 'disadvantage'."
+            throw stringErr
         }
     }
 
@@ -86,12 +91,22 @@ function rtdProf(num, profLevel, abilityScore, type) {
 
 //fips a coin heads or tails (more convenient than entering 2 in RTD and putting in all the other params)
 function coinFlip() {
-    return Math.floor(Math.random() * 2);
+    const side = Math.floor(Math.random() * 2) + 1;
+    if (side == 1) {return "Tails"}
+    else if (side == 2) {return "Heads"};
 }
 
 //rolls a normal 6 sided die (more convenient than entering 2 in RTD and putting in all the other params)
-function sixSided() {
-    return Math.floor(Math.random() * 6);
+function quickRoll6() {
+    return Math.floor(Math.random() * 6) + 1;
+}
+
+function quickRoll20() {
+
+}
+
+function divide(num, diviedBy) {
+    
 }
 
 
@@ -113,4 +128,4 @@ console.log("coin flip is " + coinFlip());
 
 console.log("----------------------------------------------------------------------");
 
-console.log("six sided die is " + sixSided());
+console.log("six sided die is " + quickRoll6());
