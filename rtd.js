@@ -1,7 +1,4 @@
-const numberError = "First parameter must be a number equal to 200 or less than 200, as well as greater than 0.";
-const decimalError = "First parameter must be a whole number.";
-const notNumErr = "Parameters not recognized. The first paramter must be a number.";
-const stringErr = "Second parameter must be a string reading 'advantage' or 'disadvantage'.";
+import { numberError, decimalError, notNumErr, stringErr } from "./errorMessages";
 
 //average rtd (advantage or disadvantage can be added in the "type" parameter)
 function rtd(num, abilityScore, type) {
