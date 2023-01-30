@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/jarenella/roll-the-dice/issues"
   },
-  "homepage": "https://github.com/jarenella/roll-the-dice#readme"
+  "homepage": "https://github.com/jarenella/roll-the-dice#readme",
+  "type": "module"
 }

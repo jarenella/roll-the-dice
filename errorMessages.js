@@ -3,4 +3,4 @@ const decimalError = "First parameter must be a whole number.";
 const notNumErr = "Parameters not recognized. The first paramter must be a number.";
 const stringErr = "Second parameter must be a string reading 'advantage' or 'disadvantage'.";
 
-module.exports = { numberError, decimalError, notNumErr, stringErr }
+export { numberError, decimalError, notNumErr, stringErr }
