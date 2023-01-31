@@ -25,8 +25,11 @@ This package contains simple functions related to random number generation with 
 N/A for now
 
 # Usage Information
-
-N/A for now
+## Basic RTD function
+- Probably the most basic staple of this package is the rtd() function. This function allows you to pick any number you want in the first paramter. This is the number of sides your virtual die will have. The second parameter is your character's ability score, and the third parameter is a string specificying that you are either rolling with "advantage" or "disadvantage." Take a look at the following example.
+- rtd(100, 7, "advantage")
+- In this example, you are rolling a 100 sided die for a character with an ability score of 7. This roll is also rolled with advantage. To roll a 20 sided die for a character with an ability score of 5, this time at disadvantage, you would do the following:
+- rtd(20, 5, "disadvantage")
 
 # Contribution guidelines
 

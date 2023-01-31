@@ -5,8 +5,8 @@ import { rtd, rtdProf, coinFlip, quickRoll6, quickRoll20, divide } from "./funct
 
 //ability score is seven and you're rolling a 100 sided die
 // console.log("Normal roll 100 is " + rtd(100, 7)); //error
-console.log("advantage roll 100 is " + rtd(100, 7, "advantage"));
-console.log("disadvantage roll 100 is " + rtd(100, 7, "disadvantage"));
+console.log("advantage roll 100 (7 ability score) is " + rtd(100, 7, "advantage"));
+console.log("disadvantage roll 100 (7 ability score) is " + rtd(100, 7, "disadvantage"));
 
 console.log("----------------------------------------------------------------------");
 
