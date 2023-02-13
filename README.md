@@ -36,6 +36,11 @@ N/A for now
 - If we were rolling a 100 sided die at a proficiency level of 5 and an ability score of 7, at disadvantage, it would look like the following:
 - rtdProf(100, 5, 7, "disadvantage")
 - If this roll were at advantage, we would simply replace "disadvantage" with "advantage"
+### coinFlip function
+- This function is a very straight forward function for when you want a 50/50 heads/tails style RNG quickly and easily.
+- Simply call the function with the following:
+- coinFlip();
+- This will return a string either containing "Heads" or "Tails"
 
 # Contribution guidelines
 
