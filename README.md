@@ -41,10 +41,13 @@ N/A for now
 - Simply call the function with the following:
 - coinFlip();
 - This will return a string either containing "Heads" or "Tails"
+### divide function
+- Simple division function that divides the first parameter by the second.
+- For example, num(4/2) returns 2
 
 # Contribution guidelines
 
-N/A for now
+Most contributions are welcome especially if they simplify or clean up code.
 
 # Test instructions
 
@@ -59,6 +62,6 @@ Jest tests to come in the future
 
 - GitHub: jarenella
 
-- Email: jamesa122333@gmail.com
+- Email: ijarenella@gmail.com
 
 
